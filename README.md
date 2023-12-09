@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- <h1 align="center">
+    <img alt="logo" title="Logo" src="src/assets/logo.png" />
+</h1>
 
-## Getting Started
+<h1 align="center">
+    <img alt="telas" title="groups" src="src/assets/groups.jpg" width="30%" />
+    <img alt="telas" title="new-group" src="src/assets/new-group.jpg" width="30%" />
+    <img alt="telas" title="players" src="src/assets/players.jpg" width="30%" />
+</h1> -->
 
-First, run the development server:
+## 💻 Projeto DEVSTORE
+
+---
+
+Desenvolvimento do projeto Dev Store usando o Next.js 14 com Server Components. O projeto terá funcionalidades básicas, como listagem de produtos, carrinho e busca. Vamos criar um modal para exibir os detalhes do produto quando o usuário clicar em um item. Além disso, vamos aprender sobre interceptação de rotas no Next.js. O foco principal será a busca e exibição de dados de uma API. Utilizaremos imagens de camisetas e moletons da Rocketseat. Vamos configurar o projeto, instalar dependências e configurar o ESLint. Em seguida, começaremos a criar as páginas do projeto.
+
+## :rocket: Tecnologias Utilizadas
+
+---
+
+<!-- -  [Typescript](https://www.typescriptlang.org/)
+-  [axios](https://github.com/axios/axios) -->
+
+## 🔖 Configurações do Layout
+
+---
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 💻 Comando para criar o projeto
+    ✨ pnpm create next-app devstore
+
+# 💻 Comando para utilizar o eslint da rocketseat
+    ✨ pnpm i @rocketseat/eslint-config -D
+
+# 💻 Biblioteca de icons
+    ✨ pnpm i lucide-react
+
+# 💻 Biblioteca para validação
+    ✨ pnpm i zod
+
+# 💻 Biblioteca concatenar class já existentes do tailwind-merge
+    ✨ pnpm i tailwind-merge
+
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## :arrow_forward: Como Executar
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
 
-## Learn More
+# clonar o repositório
+# git clone git@github.com:lacymelo/Ignite-Call.git
 
-To learn more about Next.js, take a look at the following resources:
+# entrar na pasta
+# cd Ignite-Call
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# instalação das dependências
+# npm i
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# executar o projeto
+# npm run dev
+```
 
-## Deploy on Vercel
+## :man_student: Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feito com ♥ by Laciene Melo:wave: [#lacymelo](https://github.com/lacymelo)
