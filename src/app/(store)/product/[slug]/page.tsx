@@ -31,6 +31,16 @@ export async function generateMetadata({ params }: ProductsProps): Promise<Metad
     }
 }
 
+// cacheamento de featured
+export async function generateStaticParams() {
+    const response = await api('/products/featured')
+    const product: Product[] = await response.json()
+
+    return product.map((product) => {
+        return { slug: product.slug }
+    })
+}
+
 export default async function ProductPage({ params }: ProductsProps) {
     const [product] = await getProduct(params.slug)
 
