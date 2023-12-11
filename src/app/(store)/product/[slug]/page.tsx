@@ -11,7 +11,7 @@ interface ProductsProps {
 
 // memoização -> deduplicar
 
-async function getProduct(slug: string): Promise<Product[]> {
+async function getProduct(slug: string): Promise<Product> {
     const response = await api(`/products/${slug}`, {
         next: {
             revalidate: 60 * 60, // 1 hour
@@ -24,7 +24,7 @@ async function getProduct(slug: string): Promise<Product[]> {
 }
 
 export async function generateMetadata({ params }: ProductsProps): Promise<Metadata> {
-    const [product] = await getProduct(params.slug)
+    const product = await getProduct(params.slug)
 
     return {
         title: product.title
@@ -42,7 +42,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ProductPage({ params }: ProductsProps) {
-    const [product] = await getProduct(params.slug)
+    const product = await getProduct(params.slug)
 
     return (
         <div className="relative grid max-h-[860px] grid-cols-3">

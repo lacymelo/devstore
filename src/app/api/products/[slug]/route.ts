@@ -13,5 +13,5 @@ export async function GET(_: Request, { params }: { params: { slug: string } }) 
         return Response.json({ message: "Product not found." }, { status: 400 })
     }
 
-    return Response.json({ product })
+    return Response.json(product)
 }
