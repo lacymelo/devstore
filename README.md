@@ -41,6 +41,12 @@ Desenvolvimento do projeto Dev Store usando o Next.js 14 com Server Components. 
 # 💻 Biblioteca concatenar class já existentes do tailwind-merge
     ✨ pnpm i tailwind-merge
 
+# 💻 Biblioteca cypress para testes end two end (E2E)
+    ✨ pnpm i cypress -D
+
+# 💻 comando de execução
+    ✨ pnpm cypress open
+
 
 ```
 
