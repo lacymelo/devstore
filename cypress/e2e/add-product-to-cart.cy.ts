@@ -1,6 +1,9 @@
 describe('add product to cart', () => {
+  beforeEach(() => {
+    cy.visit('/')
+  })
+
   it('o usuário deve visitar um produto e poder adicionar ao carrinho', () => {
-    cy.visit('http://localhost:3000')
 
     cy.get('a[href^="/product"]').first().click()
 
@@ -12,7 +15,6 @@ describe('add product to cart', () => {
   })
 
   it('o usuário pode buscar por um produto', () => {
-    cy.visit('http://localhost:3000')
 
     cy.get('input[name=q]').type('moletom').parent('form').submit()
   })
