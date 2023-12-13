@@ -47,6 +47,9 @@ Desenvolvimento do projeto Dev Store usando o Next.js 14 com Server Components. 
 # 💻 comando de execução
     ✨ pnpm cypress open
 
+# 💻 Biblioteca para gerenciar variáveis ambientes
+    ✨ pnpm add @t3-oss/env-nextjs
+
 
 ```
 
