@@ -57,16 +57,16 @@ Desenvolvimento do projeto Dev Store usando o Next.js 14 com Server Components. 
 ```bash
 
 # clonar o repositório
-# git clone git@github.com:lacymelo/Ignite-Call.git
+# git@github.com:lacymelo/devstore.git
 
 # entrar na pasta
-# cd Ignite-Call
+# cd devstore
 
 # instalação das dependências
-# npm i
+# pnpm i
 
 # executar o projeto
-# npm run dev
+# pnpm run dev
 ```
 
 ## :man_student: Autor
